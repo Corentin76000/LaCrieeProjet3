@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "93612328036",
+    "project_id": "criee-71f53",
+    "storage_bucket": "criee-71f53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93612328036:android:5d01f219ca6b94f5e34b71",
+        "android_client_info": {
+          "package_name": "com.example.criee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDowhxSwIQBzhD8vHezOrS6-oGy6vwf6wA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
