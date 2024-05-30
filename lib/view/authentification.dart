@@ -1,3 +1,4 @@
+import 'package:criee/view/interface.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -6,11 +7,11 @@ class AuthentificationPage extends StatelessWidget {
   const AuthentificationPage({Key? key}) : super(key: key);
 
   Future<void> registerWithEmailAndPassword(String email, String password) async {
-    // Votre logique d'enregistrement avec Firebase
+    // Enregistrement avec Firebase
   }
 
   Future<void> signInWithEmailAndPassword(String email, String password, BuildContext context) async {
-    // Votre logique de connexion avec Firebase
+    // Connexion avec Firebase
   }
 
   @override
@@ -45,7 +46,10 @@ class AuthentificationPage extends StatelessWidget {
             SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: () {
-                signInWithEmailAndPassword(emailController.text, passwordController.text, context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => InterfacePage()),
+                );
               },
               child: Text('Connexion'),
             ),
@@ -82,9 +86,6 @@ class CreateAccountPage extends StatelessWidget {
         'email': email,
         'password': password,
       });
-
-      // Si nécessaire, vous pouvez également effectuer d'autres opérations après la création du compte ici
-
     } catch (e) {
       print(e);
     }
