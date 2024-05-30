@@ -21,7 +21,7 @@ class AuthentificationPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Authentification'),
+        title: Text('La Criee - Authentification'),
       ),
       body: Padding(
         padding: EdgeInsets.all(20.0),
