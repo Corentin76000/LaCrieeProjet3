@@ -26,9 +26,9 @@ class AuthentificationPage extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(20.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Image.asset('assets/images/LaCrieeLogo.png'),
+            SizedBox(height: 20.0),
             TextField(
               controller: emailController,
               decoration: InputDecoration(
@@ -106,6 +106,8 @@ class CreateAccountPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Image.asset('assets/images/LaCrieeLogo.png'),
+            SizedBox(height: 20.0),
             TextField(
               controller: emailController,
               decoration: InputDecoration(
